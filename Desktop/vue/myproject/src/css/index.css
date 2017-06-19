@@ -1,0 +1,34 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #333;
+}
+a{
+	text-decoration: none;
+}
+.header a{
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+	color: #333;
+}
+.header a.active{
+	color: #fff;
+	background: #ff0000;
+}
+.header a:hover{
+	color:#ff0000;
+}
+/*margin值start*/
+.mt40{
+	margin-top: 40px;
+}
+/*margin值end*/
+/*清除缓存start*/
+.clearfix{
+	clear: both;
+}
+/*清除缓存end*/
