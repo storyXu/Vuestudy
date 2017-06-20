@@ -5,6 +5,7 @@
       <!-- 通过传入 `to` 属性指定链接. -->
       <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
       <router-link to="/" v-bind:class="{active: isActive}" v-on:click="doSomething">Go to Hello</router-link>
+      <br>
       <router-link to="/about" v-bind:class="{active: !isActive}" v-on:click="doSomething">Go to About</router-link>
     </div>
     <router-view></router-view>
@@ -13,19 +14,18 @@
 
 <script type="text/javascript">
 export default {
-  name: 'app'
-};
-const app = new Vue({
-  el: '#app',
-  data: {
-    isActive: true
+  name: 'home',
+  data(){
+    return {
+      isActive: true
+    }
   },
   methods: {
     doSomething: function(){
       this.isActive = !this.isActive;
     }
   }
-});
+};
 </script>
 
 <style>
